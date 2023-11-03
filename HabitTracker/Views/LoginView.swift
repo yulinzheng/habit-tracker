@@ -43,10 +43,11 @@ struct LoginView: View {
                     Text("Don't have an account?")
                     NavigationLink("Sign Up", destination: RegisterView())
                 }
-                .padding(.bottom, 50)
+                .padding(.bottom)
                 
                 Spacer()
             }
+            .ignoresSafeArea(.keyboard, edges: .bottom)
         }
     }
 }
