@@ -10,26 +10,29 @@ import SwiftUI
 struct HeaderView: View {
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 0)
+            
+            Rectangle()
                 .foregroundColor(Color("AppPurple"))
-                .rotationEffect(Angle(degrees: 15))
-
+                .offset(y: -60)
+            Rectangle()
+                .foregroundColor(Color("AppPurple"))
+                .rotationEffect(Angle(degrees: -15))
             
             VStack {
                 Text("Habit Tracker")
                     .font(.system(size: 50))
                     .foregroundColor(Color.white)
                     .bold()
-                
-                Text("Build Habits & Reach Goals")
-                    .font(.system(size: 25))
-                    .foregroundColor(Color.white)
+                    .padding(.bottom, 5)
                     
+                Text("Build Habits & Reach Goals")
+                    .font(.system(size: 20))
+                    .foregroundColor(Color.white)
             }
-            .padding(.top, 30)
+            .padding(.top, 50)
         }
-        .frame(width: UIScreen.main.bounds.width * 3, height: 300)
-        .offset(y: -100)
+        .frame(width: UIScreen.main.bounds.width * 3, height: UIScreen.main.bounds.height / 3)
+        .offset(y: -50)
     }
 }
 
