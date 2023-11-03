@@ -30,6 +30,7 @@
 		7CA3E15D2AA31256006E3282 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA3E15C2AA31256006E3282 /* HabitListView.swift */; };
 		7CA3E15F2AA31262006E3282 /* NewHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA3E15E2AA31262006E3282 /* NewHabitView.swift */; };
 		7CF995B12AF4BE7E00423FE5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF995B02AF4BE7E00423FE5 /* HeaderView.swift */; };
+		7CF995B32AF5A21F00423FE5 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF995B22AF5A21F00423FE5 /* LoginButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		7CA3E15C2AA31256006E3282 /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
 		7CA3E15E2AA31262006E3282 /* NewHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitView.swift; sourceTree = "<group>"; };
 		7CF995B02AF4BE7E00423FE5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		7CF995B22AF5A21F00423FE5 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				7CA3E15C2AA31256006E3282 /* HabitListView.swift */,
 				7CA3E15E2AA31262006E3282 /* NewHabitView.swift */,
 				7CF995B02AF4BE7E00423FE5 /* HeaderView.swift */,
+				7CF995B22AF5A21F00423FE5 /* LoginButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				7C325BB82AA15E6500B153B2 /* MainView.swift in Sources */,
 				7CA3E1552AA3104C006E3282 /* NewHabitViewModel.swift in Sources */,
 				7CA3E14B2AA30F41006E3282 /* ProfileViewModel.swift in Sources */,
+				7CF995B32AF5A21F00423FE5 /* LoginButton.swift in Sources */,
 				7C325BB62AA15E6500B153B2 /* HabitTrackerApp.swift in Sources */,
 				7CA3E1592AA31209006E3282 /* LoginView.swift in Sources */,
 				7CA3E1512AA30F97006E3282 /* RegisterViewModel.swift in Sources */,
