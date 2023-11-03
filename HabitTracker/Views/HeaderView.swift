@@ -10,7 +10,6 @@ import SwiftUI
 struct HeaderView: View {
     var body: some View {
         ZStack {
-            
             Rectangle()
                 .foregroundColor(Color("AppPurple"))
                 .offset(y: -60)
@@ -25,7 +24,7 @@ struct HeaderView: View {
                     .bold()
                     .padding(.bottom, 5)
                     
-                Text("Build Habits & Reach Goals")
+                Text("Build Habits & Reach Goals!")
                     .font(.system(size: 20))
                     .foregroundColor(Color.white)
             }
