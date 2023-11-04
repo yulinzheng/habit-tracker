@@ -16,24 +16,22 @@ struct LoginView: View {
         NavigationView {
             VStack {
                 // Header
-                HeaderView()
+                HeaderView(title: "Habit Tracker",
+                           subtitle: "Build Habits & Reach Goals!",
+                           angle: -15,
+                           background: Color("AppPurple"))
 
                 // Login Form
                 Form {
                     TextField("Email", text: $email)
+                        .autocorrectionDisabled()
+                        .autocapitalization(.none)
                     SecureField("Password", text: $password)
+                        .autocorrectionDisabled()
+                        .autocapitalization(.none)
 
-                    Button {
-                        // log in
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(Color.blue)
-                            
-                            Text("Sign In")
-                                .foregroundColor(Color.white)
-                                .bold()
-                        }
+                    LoginButton(title: "Sign In", background: Color("AppPurple")) {
+                        // action
                     }
                     .padding(.vertical)
                 }
