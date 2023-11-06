@@ -9,8 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State var email = ""
-    @State var password = ""
+    @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
         NavigationView {
@@ -20,22 +19,23 @@ struct LoginView: View {
                            subtitle: "Build Habits & Reach Goals!",
                            angle: -15,
                            background: Color("AppPurple"))
-
+                
                 // Login Form
                 Form {
-                    TextField("Email", text: $email)
+                    TextField("Email", text: $viewModel.email)
                         .autocorrectionDisabled()
                         .autocapitalization(.none)
-                    SecureField("Password", text: $password)
+                    SecureField("Password", text: $viewModel.password)
                         .autocorrectionDisabled()
                         .autocapitalization(.none)
-
+                    
                     LoginButton(title: "Sign In", background: Color("AppPurple")) {
                         // action
+                        viewModel.login()
                     }
                     .padding(.vertical)
                 }
-
+                
                 // Create Account
                 HStack {
                     Text("Don't have an account?")
