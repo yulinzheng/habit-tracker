@@ -40,6 +40,8 @@ struct LoginView: View {
                 HStack {
                     Text("Don't have an account?")
                     NavigationLink("Sign Up", destination: RegisterView())
+                        .navigationBarTitleDisplayMode(.inline)
+                        .navigationTitle("Sign In")
                 }
                 .padding(.bottom)
                 
