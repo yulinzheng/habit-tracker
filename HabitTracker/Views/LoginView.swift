@@ -22,6 +22,11 @@ struct LoginView: View {
                 
                 // Login Form
                 Form {
+                    if !viewModel.errorMsg.isEmpty {
+                        Text(viewModel.errorMsg)
+                            .foregroundColor(Color.red)
+                    }
+
                     TextField("Email", text: $viewModel.email)
                         .autocorrectionDisabled()
                         .autocapitalization(.none)
